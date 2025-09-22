@@ -1,0 +1,376 @@
+
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient( rgba(33, 53, 85,1), rgb(15, 90, 117));
+}
+
+
+.header{
+    text-align: left;
+    color: white;
+    
+}
+
+.header h3{
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.filter{
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: -30px;
+    
+}
+
+.information{
+    background-color: transparent;
+    overflow: auto;
+    height: 700px;
+    max-height: auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #003366, #005f99, #0099cc, #33ccff); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #003366, #0077b6, #0099cc);
+    border-radius: 10px;
+    border: 2px solid #ffffff22; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #002244, #005f99, #0088cc); 
+}
+    
+
+
+
+.cards{
+    background-color:aquamarine;
+    width: 40%;
+    height: 340px;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left; 
+    margin-right: 40px;
+    margin-top: 40px;
+    transition: 0.5s  ease-in-out; 
+    overflow: hidden;
+     
+}
+.cards::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+.cards:hover {
+    box-shadow: 0 5px 8px 0 rgba(6, 214, 241, 0.966);
+    transform: scale(1.1);
+    transition:  0.5s ease-in-out;
+    cursor: pointer;
+    height: 700px;
+    overflow: auto;
+    
+}
+
+
+.cards .buttons{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 2px 5px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    width: 40%;
+    font-size: 2.8vh;
+    
+}
+
+.cards .buttons:hover{
+    box-shadow: 0 3px 3px 0 black;
+}
+.cards .apply{
+   
+    background-color: #24f32b;
+    margin-left: 20px; 
+}
+.cards .learn{
+    
+    background-color: aqua;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.cards img{
+    height: 300px;
+    width: 100%;
+}
+
+
+.ratings{
+    height: auto
+}
+
+.ratings .overall-rating{
+    
+    background: linear-gradient(135deg, #004080, #00AFFF);
+    color: 	#E0F7FA;
+    font-family: cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.ratings .overall-rating h1{
+    color: #FFD700;
+
+}
+
+.rating-breakdown h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #00E6E6;
+}
+
+.ratings table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 2px solid black;
+    margin-top: 20px;
+    
+}
+
+.ratings td, .ratings th {
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.ratings th {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.ratings td {
+    padding: 15px;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    
+}
+/* Highlight 5-Star Ratings */
+.ratings tr:nth-child(2) {
+    background: rgba(0, 255, 200, 0.3); 
+}
+.ratings tr:nth-child(odd){
+    color: aqua;
+}
+
+/* Alternate Row Coloring */
+.ratings tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.2);
+    color: lightcyan;
+}
+
+/* Hover Effect */
+.ratings tr:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+/* Adjusting Emoji Sizes */
+.ratings td:first-child {
+    font-size: 1.5em;
+}
+
+.review{
+   
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    margin-top: 20px;
+}
+
+.review-card{
+    background: linear-gradient( #003366, #066bdf);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    overflow: auto;
+}
+
+.review-card:hover{
+    box-shadow: 0 5px 8px 0 rgba(6, 214, 241, 0.966);
+    transform: scale(1.05);
+    transition:  0.5s ease-in-out;
+    cursor: pointer;
+    
+    
+}
+.review-card::-webkit-scrollbar{
+    width: 0px;
+}
+.review-card a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.review-card a:hover{
+    background: #09c909;
+}
+.see-more{
+    background-color: #d34c0e;
+    color: white;
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 7%;
+    text-decoration: dotted;
+}
+
+.see-more:hover{
+    box-shadow: 0px 3px 3px 3px rgb(223, 31, 6);
+    transition: 0.2s ease-in-out;
+}
+
+.feedback{
+    
+    color: white;
+    padding: 10px;
+    min-height: 300px;
+    height: auto;
+}
+.rating-input{
+    margin-left: 7%;
+}
+
+
+.stars {
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: -4.3%;
+    
+  }
+.stars .active {
+    color: #ff9c1a;
+}
+
+.feedback-text{
+    margin-left: 7%;
+    margin-top: 2%;
+    width: 80%;
+    height: 300px;
+    
+}
+
+.feedback-text label{
+    font-size: 1.5em;
+}
+
+.feedback-text textarea{
+    height: 60%;
+    margin-top: 5px;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1.3em;
+}
+
+#submitbtn {
+    background: linear-gradient(135deg, #0077B6, #00C4CC); 
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+#submitbtn:hover {
+    background: linear-gradient(135deg, #005F99, #0099AA); 
+    box-shadow: 0 5px 10px rgba(0, 255, 255, 0.7);
+}
+
+
+#cancelbtn {
+    background: linear-gradient(135deg, #6C757D, #ADB5BD); 
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+}
+
+/* Hover Effect */
+#cancelbtn:hover {
+    background: linear-gradient(135deg, #5A6268, #949DA6); 
+    box-shadow: 0 5px 10px rgba(200, 200, 200, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

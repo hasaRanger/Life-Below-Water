@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water | Conservation</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico"/>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <nav class="navbar" id="top">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+    <section>
+        <div class="container">
+            <h1 class="fade-in">Marine Conservation Efforts</h1>
+            <table>
+                <tr>
+                    <th class="logo"><img src="Images/UN-Logo.png" alt="UN Logo"></th>
+                    <th class="tablehead">Threats<span class="tablehead-text">Major issues harming marine life</span></th>
+                    <th class="tablehead">Conservation<span class="tablehead-text">Efforts to protect marine ecosystems</span></th>
+                    <th class="tablehead">Impact<span class="tablehead-text">Effect on marine biodiversity</span></th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Plastic Pollution</td>
+                    <td>Single-use plastics</td>
+                    <td>Recycling campaigns</td>
+                    <td>Decrease in marine species</td>
+                </tr>
+                <tr>
+                    <td>Microplastics</td>
+                    <td>Ban on plastic straws</td>
+                    <td>Polluted water sources</td>
+                </tr>
+                <tr>
+                    <td>Overfishing</td>
+                    <td>Unregulated fishing</td>
+                    <td>Marine protected areas</td>
+                    <td>Decline in fish populations</td>
+                </tr>
+                <tr>
+                    <td>Coral Bleaching</td>
+                    <td>Rising ocean temperatures</td>
+                    <td>Artificial reefs</td>
+                    <td>Loss of habitat</td>
+                </tr>
+                <tr>
+                    <td>Oil Spills</td>
+                    <td>Industrial accidents</td>
+                    <td>Oil containment measures</td>
+                    <td>Dead zones</td>
+                </tr>
+                <tr>
+                    <td>Climate Change</td>
+                    <td>Global warming</td>
+                    <td>Carbon footprint reduction</td>
+                    <td>Rising sea levels</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="conservation-methods">
+        <h2>🔹 Key Marine Conservation Methods</h2>
+        <ul>
+            <li>🌿 Marine Protected Areas (MPAs)</li>
+            <li>🐟 Sustainable Fishing Practices</li>
+            <li>🛑 Reducing Plastic Pollution</li>
+            <li>🌊 Coral Reef Restoration</li>
+        </ul>
+    </section>
+
+    <!-- 🌍 Impact Stats -->
+    <section class="impact-stats">
+        <h2>🌍 Global Impact of Marine Conservation</h2>
+        <div class="stats-container">
+            <div class="stat-item">🐠 14% of the ocean is protected</div>
+            <div class="stat-item">🚯 8M tons of plastic enter the ocean yearly</div>
+            <div class="stat-item">🦈 100M sharks killed annually</div>
+        </div>
+    </section>
+
+    <!-- 🏆 Success Stories -->
+    <section class="success-stories">
+        <h2>🏆 Marine Conservation Success Stories</h2>
+        <div class="story">
+            <h3>🐢 The Sea Turtle Comeback</h3>
+            <p>Thanks to conservation efforts, sea turtle populations have increased by 20% in the last decade.</p>
+        </div>
+        <div class="story">
+            <h3>🐟 Sustainable Fishing in Norway</h3>
+            <p>Norway’s strict fishing policies have led to a 30% recovery of fish stocks in the North Atlantic.</p>
+        </div>
+    </section>
+
+    <!-- 🌊 Call to Action -->
+    <section class="cta">
+        <h2>🌊 Join the Movement!</h2>
+        <p>Every action counts. Support marine conservation efforts today!</p>
+        <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
+
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <p id="top" class="go-to-top"><a href="#top">▲</a></button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+            const userButton = document.querySelector(".user-button");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                userButton.classList.toggle("active");
+            });
+        });
+
+        document.addEventListener("mousemove", function(event) {
+        createBubble(event.clientX, event.clientY);
+    });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+
+        function showLoader() {
+            loader.style.display = "block";
+        }
+
+        function hideLoader() {
+            loader.style.display = "none";
+        }
+
+        window.addEventListener("beforeunload", showLoader);
+        window.addEventListener("load", hideLoader);
+    });
+    
+
+    </script>
+</body>
+</html>

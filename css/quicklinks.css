@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(to bottom, #0077be, #00aaff, #00cccc, #66ffff);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+   text-align: center; 
+   font-size: 8vh;
+   font-weight: bold;
+   font-family: 'poppins';
+   background: linear-gradient(to right, #2600ff, #6384e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #00ffff;
+   
+}
+/* Card container */
+.card {
+    width: 20%;
+    height: 55%;
+    perspective: 1000px; /* Adds 3D effect */
+    margin-top: 4%;
+    display: inline-block;
+    margin-left: 3.9%;
+    
+    
+}
+
+/* Inner container that holds both front & back */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+/* Card faces (front & back) */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back when front is visible */
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Front side design */
+.card-front {
+    background: linear-gradient(to bottom, #0077be, #00aaff); 
+    color: white;
+}
+
+/* Back side design */
+.card-back {
+    background: linear-gradient(to bottom, #003366, #005f99); 
+    color: white;
+    transform: rotateY(180deg);
+
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    text-align: center; /* Ensures text is properly centered */
+    flex-direction: column;
+}
+
+/* Flip effect on hover */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Default link styles */
+.card-back a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: aqua;
+    line-height: 7vh;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: Color change + Animated underline */
+.card-back a:hover {
+    color: white;
+    background: rgba(0, 191, 255, 0.3); /* Light blue background */
+    border-radius: 5px;
+    padding: 8px 12px;
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.4); /* Glowing effect */
+}
+
+/* Fancy Underline Animation */
+.card-back a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Expanding underline on hover */
+.card-back a:hover::after {
+    width: 100%;
+    left: 0;
+}
+

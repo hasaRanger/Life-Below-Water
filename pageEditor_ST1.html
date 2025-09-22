@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.T.C.Rajapaksha - Student01</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+    <br>
+
+    <section class="stud">
+        <h2>D.T.C.Rajapaksha - Student01</h2>
+    </section>
+
+    <div class="container">
+        <main>
+
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Introduction</h3>
+                    <p>Our website is designed to spread awareness and conservation efforts related to Life Below Water, aligned with the United Nation's Sustainable Life 
+                        Development Goal 14.As student 1 I was tasked with designing and implementing multiple pages for this website.
+                        The pages I created include:<ul>
+                            <li>Splash Screen-The first page that users are first greeted with that will autmatically redirect to the home page after a few seconds</li>
+                            <li>Volunteer Page-A page inlcuding information about volunteer programs and user reviews </li>
+                            <li>Content Page-A page providing fun facts about the ocean,marine life and ecosystem</li>
+                        </ul>
+                    </p>
+                    <h3>Technical Description</h3>
+                        <p class="topic">HTML structure</p><p> Used HTML elements such as <code> &lt;section&gt;, &lt;div&gt;</code> and<code> &lt;h1&gt;</code>to properly organize and section the content. The meta refresh tag is added to 
+                            automatically redirect the user to the home page after 4 seconds. Also a loading animation is implemented to make the page more visually engaging.<br><br>
+                            <p class="topic">CSS Styling</p><p> To enhance the theme, applied an oceanic background video using  the<code>&lt;video&gt;</code> tag.
+                            Used keyframe animations<code>(@keyframe)</code>to create a floating bubble effect for a more immersive experience. Designed a water-text effect with<code>
+                            -webkit-background-clip: text;</code> to make the “loading” text blend in with the background and the theme. Additionally, implemented a fade out transition
+                            (.fade-out) to make the content seemingly fade out before redirecting to the home page to make the experience visually smoother.<br><br>
+                            <p class="topic">JavaScript</p><p> The delayed fade out effect (setTimeout) to create a fade-out transition before redirecting Ensured elements disappear smoothly by 
+                            modifying their opacity and display.
+                            </p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>For text readability and contrast the title and mission statement used bright colors against a dark background for better visibility and used large font sizes to 
+                            make sure even in small screens the text is readable. All images have descriptive alt attributes and the “Loading” text is inside a &lt;div&gt; ensuring screen 
+                            reader can detect it.<br>
+                            <code>prefers-reduced-motion</code> is implemented in CSS to make sure users who has disabled animation in system settings will experience a static version of 
+                            the splash screen. And <code>ease-in-out</code> animations is used to prevent sudden movements.
+                        </p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#splashVal" target="_blank">The validation page for the Splash Screen</a></p> 
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html" target="_blank">Go to Splash Screen</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p class="topic">HTML Structure</p><p> Volunteer programs are displayed in a structured card layout with an image description and buttons for more information. 
+                            <code>&lt;select&gt;</code> dropdown menu allows users to sort programs according to filters such as age, most recent and more. A star rating implemented 
+                            using <code>&lt;div class="stars"&gt; </code>lets users rate programs interactively. Furthermore, a table displays a breakdown of user ratings under the 
+                            topics of impact, support, enjoyment and safety. Users can also write reviews and submit feedback through text area and submit button.<br>
+                            <p class="topic">CSS Styling and Design Choices</p>
+                            <p> For the background used an ocean themed gradient color background to suit the theme of life below water. High contrast text 
+                            is used for readability on both light and dark backgrounds. Also to make important buttons such as “Apply Now” stand out colored them with contrasting 
+                            colors such as green and aqua.<br>
+                            <p class="topic"> Animation and hover effects</p>
+                            <p>Volunteer cards expands on hover to display more details by using <code>.cards:hover</code> and  increasing the height enough to display the content. smooth 
+                            transition applied to buttons and links for better user interaction. Volunteer cards and review cards also have a subtle glow effect on hover by using 
+                            box-shadow tag.<br>
+                            <p>JavaScript Functionality</p><p>
+                            All star elements are selected using <code>document.querySelectorAll(".stars div")</code> then added a click event listener to each star to detect selection. To ensure that clicking a star activates it and all previous ones a loop is used to check index positions <code>(index1&gt;=index2)</code> then .active class is removed from stars that comes after the selected ones.
+                            For cards when the mouse is no longer hovered over them, to automatically scroll up to the top an event listener is added to detect when the mouse is no 
+                            longer being hovered over <code>card.scrollTo({ top: 0, behavior: "smooth" });</code> is used to scroll upback to the top.
+                            </p> 
+
+                    <h3>Accessibility</h3>
+                        <ul>
+                            <li>High contrast colors and large fonts are used for texts for better readability.</li>
+                            <li>Volunteer cards have smooth hover transition effects using <code>ease-in-out</code>avoiding a sudden transition.</li>
+                            <li>To disable hover animations for users who are sensitive to motion the <code>prefers-reduced-motion</code> tag is used.</li>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST1.html#volunteerVal" target="_blank">The validation page for the volunteer page</a>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html" target="_blank">Go to volunteer page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p class="topic">HTML Structure</p><p>
+                            For altering layouts contents are organized into sections such as<code> &lt;section class="contentleft"&gt;, &lt;section class="contentright"&gt;</code>. 
+                            Navigation links (eg:- <code>a href=”#ocean”</code>) allow users to navigate through different sections of the page easily. Using images and text blocks 
+                            effectively ensures a balanced and structured presentation of information.<br>
+                            <p class="topic">CSS Styling</p>
+                            <p> Color theme</p>
+                            To match the ocean theme used a dark blue for the background and for better readability of texts added contrast-enhancing text colors.<br>
+                            <p>Animation</p>
+                            Implemented fade-in animations for titles and slide-in animations for images and info blocks using <code>@keyframes</code> for a unique scrolling experience.
+                            To make sure animations only trigger when elements enter the viewport applied <code>animation-timeline:view();</code>
+                            
+                            <p>Typography and layout</p>
+                            <p>Used a combination of elegant and playful fonts such as "Sail", "Delius" and "Shadows Into Light" for a modern look. Structured content into left-right 
+                            alternating sections for a smooth reading flow.
+                            <p class="topic">JavaScript</p><p>
+                            Using <code>window.scrollTo({ top: 0, behavior: "smooth" });</code> a button is created to scroll to the top of the page when the button is clicked and 
+                            the<code> behaviour:"smooth" </code>makes sure the scrolling to the top is smoother rather than instantly going to the top of the page.
+                            </p> 
+
+                    <h3>Accessibility</h3>
+                        <ul>
+                            <li>Light colors are used for text to stand out from the dark colored background.</li>
+                            <li>Alternative texts are available for every image</li>
+                            <li>Disabled animations for users with motion sensitivity by implementing <code>prefers-reduced-motion</code></li>
+                            <li>Entry animations for <code>appear_from_left,appear_from_right</code> is smooth and not sudden or disruptive.</li>
+
+                        </ul>
+
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST1.html#contentVal" target="_blank">Validation page for content page</a>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST1.html" target="_blank">Go to content page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                     <table>
+                        <tr>
+                        <th>Challenges</th>
+                        <th>Solution</th>
+                        </tr>
+                        <tr>
+                            <td>The title of the page would be hard to read when certain ares of the background video comes to the background</td>
+                            <td>In CSS implemented <code>mix-blend-mode: difference</code> to chnage the color according to the background</td>
+                        </tr>
+                        <tr>
+                            <td>Loading text animation losing the lower fill at the end of the animation</td>
+                            <td>Adjusted <code>background-size</code> and <code>-webkit-radial-gradient</code> properties to maintain fill consistently</td>
+                        </tr>
+                        <tr>
+                            <td>Redirect felt too sudden and abrupt</td>
+                            <td>Implemented a fade out effect right before the page redirects for better user experience.</td>
+                        </tr>
+                        <tr>
+                            <td>Sorting dropdown was not properly aligned</td>
+                            <td>Used flexbox to align it next to the heading</td>
+                        </tr>
+                        <tr>
+                            <td>Volunteer card hover effect was too sudden</td>
+                            <td>Adjusted <code>transition:0.5s ease-in-out;</code> for smoother scaling.</td>
+                        </tr>
+                        <tr>
+                            <td>For the table to look stylish it needed to change the colors of the rows alternatively but had to change the properties of each row one by one.</td>
+                            <td>Used<code> tr:nth-child() </code>and put according values(odd or even) to easily change the colors of the rows.</td>
+                        </tr>
+                        <tr>
+                            <td>In the cards when the mouse is not hovered over them and the height returns to normal it would still be stuck at the bottom part.</td>
+                            <td>Using JavaScript added an event listener to detect when the mouse is no longer hovered over the cards for the content to automatically scroll back up to the top.</td>
+                        </tr>
+                        <tr>
+                            <td>Scroll animations weren’t triggering properly.</td>
+                            <td>Used <code>animation-timeline= view()</code> to activate animations when only elements enter the viewport.</td>
+                        </tr>
+                     </table>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <ul>
+                    <li>No copyrighted content-All text and images are original or properly credited</li>
+                    <li>No misleading information-All facts and information used in the pages are from verified sources</li>
+                    <li>Accessibility compliance-Esured high contrast text,screen reader compatibility and reduced motion support</li>
+                    <li>User privacy protection-No personal data is collected or stored</li>
+                    <li>No offensive or prohibited content-The content aligns with UN sustainability goals and promotes conservation.</li>
+                    <li>Security compliance-No harmful scripts, JavaScript is only used for interactivity(eg:- ratings,sorting)</li>
+                    <li>Adheres to insitutional branding and personal publishing-The page structure follows standard HTML,CSS and JavaScript best practices.</li>
+                </ul>
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                
+                    <ul class="ref">
+                        <li>CodingNepal ,<i>Star rating in HTML,css & JavaScript</i> Available at: <a href="https://www.codingnepalweb.com/star-rating-html-css-javascript-2/">https://www.codingnepalweb.com/star-rating-html-css-javascript-2/</a> (Last accessed: 28 Feb 2025).</li>
+                        <li>W3 Schools, <i>How TO - Scroll Back To Top Button</i> Available at: <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp">https://www.codingnepalweb.com/star-rating-html-css-javascript-2/</a>
+                        (Last Accessed: 1 March 2025)</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page </a></li>
+                        <li><a href="#volunteer">Volunteer page </a></li>
+                        <li><a href="#content">Content page </a></li>
+                    </ul>
+                    <li>Student 2</li>
+                    <ul>
+                        <li><a href="pageEditor_ST2.html#home">Home page </a></li>
+                        <li><a href="pageEditor_ST2.html#table">Table page</a></li>
+                        <li><a href="pageEditor_ST2.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="pageEditor_ST3.html#feedback">Feedback page</a> </li>
+                        <li><a href="pageEditor_ST3.html#team">Team page</a></li>
+                        <li><a href="pageEditor_ST3.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="pageEditor_ST4.html#profile">Profile page </a></li>
+                        <li><a href="pageEditor_ST4.html#sitemap">Sitemap page</a></li>
+                        <li><a href="pageEditor_ST4.html#content">Content page</a></li>
+                    </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a> | <a href="#">Page Editor</a>
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+</body>
+</html>

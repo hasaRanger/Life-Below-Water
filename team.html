@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/UN-Logo.png" alt="United Nations Logo">
+                <div class="logo"><a href="home.html"> Life Below Water</a></div>
+            </div>
+            <div class="hamburger">☰</div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="content_ST3.html">Threats</a>
+                <a href="table.html">Conservation</a>
+                <a href="content_ST4.html">Latest News</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+
+            </div>
+            <a href="profile.html" class="user-button">User Profile</a>
+        </nav>
+    </header>
+
+    <section id="heading">
+        <h1>Our Team</h1><br>
+    </section>
+
+    <div class="team">
+        <div class="image-container">
+            <div class="image-box">
+                <img src="Images/teammates/student1.jpg" alt="Image 1">
+                <div class="caption">
+                    <div class="nameCard">
+                        <p class="stdName">Thevindu<br> Bandara</p>
+                        <p class="stdID">W2120073</p>
+                    </div>
+    
+                    <div class="editor">
+                        <ul>
+                            <li><a href="student1.html"><p class="editorLink">Link to the Editor's Page</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <nav>
+                            <ul>
+                                <li><a href="www.linkedin.com"><img src="Images/socials/linkedin2.png" alt="linkedin2" class="linkedin2"></a></li>
+                                <li><a href="www.email.com"><img src="Images/socials/email2.png" alt="email2" class="email2"></a></li>
+                                <li><a href="www.github.com"><img src="Images/socials/github2.png" alt="github2" class="github2"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="image-box">
+                <img src="Images/teammates/student2.jpg" alt="Image 2">
+                <div class="caption">
+                    <div class="nameCard">
+                        <p class="stdName">Theshara Rajapaksa</p>
+                        <p class="stdID">W2120080</p>
+                    </div>
+
+                    <div class="editor">
+                        <ul>
+                            <li><a href="pageEditor_ST2.html"><p class="editorLink">Link to the Editor's Page</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <nav>
+                            <ul>
+                                <li><a href="www.linkedin.com"><img src="Images/socials/linkedin2.png" alt="linkedin2" class="linkedin2"></a></li>
+                                <li><a href="www.email.com"><img src="Images/socials/email2.png" alt="email2" class="email2"></a></li>
+                                <li><a href="www.github.com"><img src="Images/socials/github2.png" alt="github2" class="github2"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="Images/teammates/student3.jpg" alt="Image 3">
+                <div class="caption">
+                    <div class="nameCard">
+                        <p class="stdName">Nadeesha Hasaranga</p>
+                        <p class="stdID">W2120076</p>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li><a href="student3.html"><p class="editorLink">Link to the Editor's Page</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <nav>
+                            <ul>
+                                <li><a href="www.linkedin.com"><img src="Images/socials/linkedin2.png" alt="linkedin2" class="linkedin2"></a></li>
+                                <li><a href="www.email.com"><img src="Images/socials/email2.png" alt="email2" class="email2"></a></li>
+                                <li><a href="www.github.com"><img src="Images/socials/github2.png" alt="github2" class="github2"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="Images/teammates/student4.jpeg" alt="Image 4">
+                <div class="caption">
+                    <div class="nameCard">
+                        <p class="stdName">Senith<br> Vidanage</p>
+                        <p class="stdID">W2120074</p>
+                    </div>
+                    <div class="editor">
+                        <ul>
+                            <li><a href="student4.html"><p class="editorLink">Link to the Editor's Page</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <nav>
+                            <ul>
+                                <li><a href="www.linkedin.com"><img src="Images/socials/linkedin2.png" alt="linkedin2" class="linkedin2"></a></li>
+                                <li><a href="www.email.com"><img src="Images/socials/email2.png" alt="email2" class="email2"></a></li>
+                                <li><a href="www.github.com"><img src="Images/socials/github2.png" alt="github2" class="github2"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+    
+</body>
+</html>

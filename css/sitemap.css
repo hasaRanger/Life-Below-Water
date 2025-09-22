@@ -1,0 +1,129 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    width: 100%;      
+    height: auto;     
+}
+
+body {
+    background-color:#005F73;
+}
+
+#content {
+    
+    grid-area : 2/1/8/3;
+    background-color: #94D2BD;
+    border-radius : 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.container {
+    display : grid;
+    background:linear-gradient(to bottom, #E0E0E0, #005F73);
+    grid-template-columns : 2fr 1fr;
+    grid-template-rows : repeat(7, 100px);
+    gap : 20px;
+    padding : 20px;
+    width: 100%;  
+    height: 100%; 
+    
+    
+}
+
+#svg_content {
+    width: 100%;
+    height : 100%;
+}
+
+.title {
+    fill : rgb(205, 231, 248);
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.sub_title {
+    fill : rgb(205, 231, 248);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.sub_title_2 {
+    fill : rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 90%;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+.circle {
+    stroke : rgb(1, 17, 29);
+    fill : #18382e;
+    stroke-width: "2";
+}
+
+.sub_circle {
+    stroke : rgb(1, 17, 29);
+    fill : #03855c;
+    stroke-width: "2";
+
+}
+
+.circle:hover{         /*Colour change on hovering*/
+    stroke : rgb(1, 17, 29);
+    fill : #2a7a04;
+    stroke-width: "2";
+}
+
+.sub_circle:hover {     /*Colour change on hovering*/
+    stroke : rgb(1, 17, 29);
+    fill : #17c792;
+    stroke-width: "2";
+
+}
+
+
+.navbar {
+    display : flex;
+    
+    background-color: white;
+    grid-area : 1/1/2/3;
+    align-items : center;
+    padding : 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #131418;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #4158dd;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#logo {
+    margin-right : auto;
+    width : 100px;
+    height : 100px;
+}
+
+.lines {
+    stroke : rgb(4, 19, 8);
+    stroke-width: "5";
+}

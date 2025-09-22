@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water | Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <nav class="navbar" id="top">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+    <section class="photo-section" >
+        <br>
+        <h2 class="fade-in">Protect Our Oceans, Protect Our Future</h2>
+        <p class="fade-in">Join us in conserving marine life for a sustainable future.</p>
+        <div class="photo-container">
+            <img src="Images/photo_sec1.jpg" alt="Ocean Image 1">
+            <img src="Images/photos_sec2.jpg" alt="Ocean Image 2">
+            <img src="Images/photo_sec3.jpg" alt="Ocean Image 3">
+        </div>
+        <br>
+        <p><a href="content_ST2.html">[Learn More]</a></p>
+        <br>
+    </section>
+    <section class="why-section">
+        <h2>Why It Matters...</h2>
+        <p>Life below water is a critical part of the Earth's ecosystem. It is home to a wide variety of marine life, and provides food and livelihoods for millions of people. However, the oceans are under threat from pollution, overfishing, and climate change. By conserving marine life, we can help protect the oceans and ensure a sustainable future for all.</p>
+    </section>
+
+    <section class="two-column-section">
+        <div class="two-column">
+            <div class="image-container">
+                <img src="Images/Card_Sec1.jpg" alt="Image 1">
+                <h3>Platic pollution</h3>
+                <p>Plastic pollution is the accumulation of plastic in the environment, which harms wildlife, humans, and ecosystems</p>
+                <img src="Images/Card_Sec2.jpg" alt="Image 2">
+                <h3>Overfishing</h3>
+                <p>Overfishing occurs when too many fish in a particular stock are caught and there are not enough adults to breed and sustain a healthy population</p>
+            </div>
+        </div>
+        <div class="two-column">
+            <div class="image-container">
+                <img src="Images/Card_Sec3.jpg" alt="Image 3">
+                <h3>Coral Reefs Conservation</h3>
+                <p>Coral reefs are valuable ecosystems that provide food, tourism, and coastal protection.</p>
+                <img src="Images/Card_Sec4.jpg" alt="Image 4">
+                <h3>Climate Change & Ocean Acidification</h3>
+                <p>Ocean acidification is a result of climate change and is caused by increasing carbon dioxide (CO2) emissions. </p>
+            </div>
+        </div>
+    </section>
+    <section class="image-text-section">
+        <div class="image-container">
+            <img src="Images/conservation-img-to-text.jpg" alt="Ocean Conservation">
+        </div>
+        <div class="text-container">
+            <h2>How We Are Making a Difference</h2>
+            <ul>
+                <li>Supporting marine protected areas</li>
+                <li>Reducing plastic pollution</li>
+                <li>Restoring coral reefs</li>
+                <li>Monitoring and protecting marine life</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="awareness">
+            <div class="links_container">
+                <p><a href="content_ST1.html">Fun Facts
+                </a>|<a href="Volunteer.html">Volunteer</a>|<a href="#">Spread Awareness</a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <p id="top" class="go-to-top"><a href="#top">▲</a></button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+            const userButton = document.querySelector(".user-button");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                userButton.classList.toggle("active");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+
+        function showLoader() {
+            loader.style.display = "block";
+        }
+
+        function hideLoader() {
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 2000);
+        }
+
+        window.addEventListener("beforeunload", showLoader);
+        window.addEventListener("load", hideLoader);
+    });
+    
+    </script>
+</body>
+</html>

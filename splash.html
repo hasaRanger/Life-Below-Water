@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <meta http-equiv="refresh" content="4; url=home.html" /> 
+    
+    <link rel="stylesheet" href="css/splash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+IT+Moderna:wght@100..400&family=Sigmar&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="bg" id="content">
+    <video autoplay muted loop id="background-video">
+        <source src="Images/bg1.mp4" type="video/mp4">
+    </video>
+    
+    
+    <div class="intro">
+        <div class="title">
+            Life Below Water 
+        </div><br><br>
+        <div class="mission">Dive into a brighter future with us! Our mission is to protect and preserve life below water, ensuring healthy oceans for generations to come. Together, we can make waves of change by promoting sustainable practices, reducing pollution, and safeguarding marine ecosystems. Join us in our journey to achieve the United Nations' Sustainable Development Goal 14: Life Below Water. Let's create a world where our oceans thrive, and life beneath the waves flourishes. Start your journey with us today!</div>
+        <br><br><br>
+        <div class="members">
+            <b><u>Group Members</u></b><br>
+            Thevindu<br>
+            Theshara<br>
+            Nadeesha<br>
+            Senith
+        </div>
+        
+
+        
+    </div>
+   
+    
+    <div id="box">
+        <div id="tile01">
+          <div id="mask">Loading</div>
+        </div>
+    </div>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="bubble-container2">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.getElementById("content").classList.add("fade-out"); // Apply fade-out effect
+            setTimeout(() => {
+                document.getElementById("content").style.display = "none"; // Hide completely
+            }, 1500); // Wait for transition to finish
+        }, 3000); // 3-second delay before disappearing
+
+
+       
+    </script>
+        
+        
+    
+</body>
+</html>

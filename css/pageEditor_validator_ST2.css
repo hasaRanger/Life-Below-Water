@@ -1,0 +1,116 @@
+html{
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    line-height: 130%;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+    overflow-x: auto; /* Enable scrolling if content overflows */
+    max-width: 100%;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    overflow-x: auto; /* Enable scrolling if content overflows */
+    max-width: 100%;
+}
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 8px;
+}
+
+
+code{
+    background-color: #f4f4f4;
+
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; 
+    border: 2px solid black;
+    margin-top: 20px;
+}
+td ,th{
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+}
+.topic{
+    display: inline;
+    background: #bef106;
+    color: #0056b3;
+}
+
+/* Go to top button */
+
+.go-to-top {
+    display: flex; /* Ensure the button is always displayed */
+    position: fixed; /* Fix the button's position on the screen */
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 20px; /* Position it 20px from the right */
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.go-to-top a{
+    text-decoration: none;
+    color: #fff;
+}

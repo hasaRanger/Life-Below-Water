@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to bottom, #E0E0E0, #005F73);
+    padding: 20px;
+}
+
+.heading{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uname, .email, .comments, .tel{
+    background:linear-gradient(to right, white, #94D2B2);
+    opacity: 0.5;
+}
+
+.nameMail{
+    background:rgba(148, 210, 178, 0.4);
+}
+
+.message{
+    background:rgba(148, 210, 178, 0.4);
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.valueFB{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+}
+
+#nameMail{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#survey{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.survey th, td{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.userReturnTable{
+    width: 55%;
+    border: none;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.userReturnTable th{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.userReturnTable td{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.table-container{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    display: none;
+}
+
+/*toggle userReturnTable when No button is toggled */
+.table-container.show{
+    max-height: 500px;
+    opacity: 1;
+    display: block;
+}
+
+/*text box for "other" which reveals after the other checkbox is selected by user*/
+#otherTextArea{
+    text-align: center;
+    margin-bottom: 30px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    margin-left: 25%;
+    }
+
+/*background colours for each cell*/
+.veryUnsatisfied{
+    background-color : rgba(255, 0, 0 , 0.3);
+}
+
+.unsatisfied{
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+.neutral{
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+.satisfied{
+    background-color: rgba(144, 238, 144, 0.5);
+}
+.verySatisfied{
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+#veryUnsatisfied:checked{
+    background-color: rgba(255, 0, 0 , 0.3);
+}
+
+.overExp, .easeNav, .qContent{
+    text-align: justify;
+}
+
+#userVisit {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.userVisitYesButton, .userVisitNoButton,.updatesYesButton, .updatesNoButton{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#comments{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#updates{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.userUpdates{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.dropdown{
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background:linear-gradient(to right, white, #94D2B2);
+}
+
+#dropdown{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, opacity 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+#buttons{
+    margin: 10px;
+    text-align: center;
+}
+
+.submitButton, .resetButton{
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submitButton{
+    background-color: #005F73;
+    color: white;
+    margin-right: 20px;
+}
+
+.submitButton:hover{
+    background-color: #0A9396;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+.resetButton{
+    background-color: gray;
+    color: black;
+    margin-left: 20px;
+}
+
+.resetButton:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+/*styling radio buttons*/
+input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border:1px solid black;
+    border-radius:50% ;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+}
+input[type="radio"]:checked:before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #213555;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.userReturnTable .checkbox-container {
+    display: flex;
+    align-items: center; /*Ensures checkbox and text align vertically*/
+    gap: 10px; /*Space between checkbox and text*/
+  }
+
+.userReturnTable input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.userReturnTable input[type="checkbox"]:checked{
+    background-color: #213555;
+}
+
+
+
+

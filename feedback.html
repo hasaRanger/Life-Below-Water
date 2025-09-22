@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="css/feedback.css">
+    <link rel="stylesheet" href="css/global.css">
+    
+    
+</head>
+<body>
+    <!--Js script for navbar-->
+
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/UN-Logo.png" alt="United Nations Logo">
+                <div class="logo"><a href="home.html"> Life Below Water</a></div>
+            </div>
+            <div class="hamburger">☰</div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="content_ST3.html">Threats</a>
+                <a href="table.html">Conservation</a>
+                <a href="content_ST4.html">Latest News</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+
+            </div>
+            <a href="profile.html" class="user-button">User Profile</a>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <h1>Feedback Form</h1>
+    </section>
+
+    <div class="message">
+        <h5 class="valueFB">We value your feedback.</h5>
+        <p>Please fill below feedback forum to help us improve our customer experience.</p>
+    </div>
+    <form action="#" method="POST">
+        <div id="nameMail">
+            <label>*Enter your name: </label>
+            <input type="text" size="30" name="uname" class="uname" placeholder="John Doe" required><br><br>
+
+            <label>*Enter your Email: </label>
+            <input type="email" size="30" class="email" placeholder="johndoe19@gmail.com" required><br><br>
+
+            <label>*Enter your Telephone number: </label>
+            <input type="tel" size="16" name="telephone" class="tel" maxlength="12" placeholder="+947XXXXXXXX"><br><br>
+        </div>
+
+        <div id="userVisit">
+            <label class="firstVisit">Was this your first time visiting this website?</label>
+            <input type="radio" name="firstVisitButton" value="Yes" class="userVisitYesButton" id="userVisitYesButton" onclick="toggleUserReturnTable()">
+            <label for="userVisitYesButton">Yes</label>
+            <input type="radio" name="firstVisitButton" value="No" class="userVisitNoButton" id="userVisitNoButton" onclick="toggleUserReturnTable()">
+            <label for="userVisitNoButton">No</label>
+        </div>
+
+        <div id="userReturn">
+            <div class="table-container" id="tableContainer">
+                <table class="userReturnTable" id="userReturnTable">
+                    <tr>
+                        <th colspan = 2><label class="userReturnCheck">What encouraged you to return to our website?</label><br><br></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="userReturnChoice1">Interesed in latest updates or blog posts
+                            </label>
+                        </td>
+                        <td>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="userReturnChoice2">Searching for volunteering opportunities
+                            </label>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="userReturnChoice3">Exploring ways to contribute or donate to the cause
+                            </label>
+                        </td>
+                            <td>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="userReturnChoice4">For academic/reasearch purposes
+                                </label>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="userReturnChoice5">Just browsing out of curiosity
+                            </label>
+                        </td>
+                            <td>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="userReturnChoice6" id="otherCheckBox" onclick="toggleOtherTextArea()">Other (Please specify)
+                                </label>
+                            </td>
+                    </tr>  
+                </table>
+
+                <div class="otherTextArea" id="otherTextArea">
+                    <textarea class="comments" name="comments" rows="6" cols="40"></textarea>
+                </div>
+            </div>    
+        </div>
+        
+        <div id="survey">
+        <table class="survey">
+            <tr>
+                <th></th>
+                <th class="veryUnsatisfied">Very Unsatisfied</th>
+                <th class="unsatisfied">Unsatisfied</th>
+                <th class="neutral">Neutral</th>    
+                <th class="satisfied">Satisfied</th>
+                <th class="verySatisfied">Very Satisfied</th>
+            </tr>
+            <tr>
+                <td class="overExp">Rate the overall experience<br> of our website</td>
+                <td><input type="radio" name="choice1" value="VeryUnsatisfied"></td>
+                <td><input type="radio" name="choice1" value="Unsatisfied"></td>
+                <td><input type="radio" name="choice1" value="Neutral"></td>
+                <td><input type="radio" name="choice1" value="Satisfied"></td>
+                <td><input type="radio" name="choice1" value="VerySatisfied"></td>
+            </tr>
+            <tr>
+                <td class="easeNav">Rate the ease of<br> navigation of our website</td>
+                <td><input type="radio" name="choice2" value="VeryUnsatisfied"></td>
+                <td><input type="radio" name="choice2" value="Unsatisfied"></td>
+                <td><input type="radio" name="choice2" value="Neutral"></td>
+                <td><input type="radio" name="choice2" value="Satisfied"></td>
+                <td><input type="radio" name="choice2" value="VerySatisfied"></td>
+            </tr>
+            <tr>
+                <td class="qContent">Rate the content<br> quality of our website</td>
+                <td><input type="radio" name="choice3" value="VeryUnsatisfied"></td>
+                <td><input type="radio" name="choice3" value="Unsatisfied"></td>
+                <td><input type="radio" name="choice3" value="Neutral"></td>
+                <td><input type="radio" name="choice3" value="Satisfied"></td>
+                <td><input type="radio" name="choice3" value="VerySatisfied"></td>
+            </tr>
+        </table>
+        </div>
+        <br>
+
+        <div id="comments">
+            <label>Do you have any additional ideas on how we can improve this website:</label><br><br>
+            <textarea class="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div id="updates">
+            <label class="userUpdates">Would you like to recieve newsletters and updates about this website?</label>
+            <label for="updatesYesButton">
+                <input type="radio" name="updatesButton" value="Yes" class="updatesYesButton" id="updatesYesButton" onclick="toggleDropdown()" required/>Yes
+            </label>
+            <label for="updatesNoButton">
+                <input type="radio" name="updatesButton" value="No" class="updatesNoButton" id="updatesNoButton" onclick="toggleDropdown()" required/>No
+            </label>
+            <div id="dropdown">
+                <select id="dropdownMenu" class="dropdown">
+                    <option value="Email">via Email</option>
+                    <option value="SMS">via SMS</option>
+                </select>
+            </div>    
+        </div>
+        
+
+        <div id="buttons">
+            <button type="submit" class="submitButton">Submit</button>
+            <button type="reset" class="resetButton" id="resetButton" onclick="toggleDropdown(); toggleDropdown()">Reset</button>
+        </div>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+
+        function toggleDropdown() {
+    var updatesYesButton = document.getElementById('updatesYesButton');
+    var dropdown = document.getElementById('dropdown');
+    
+    // Display the dropdown if "Yes" is checked; hide otherwise.
+    if (updatesYesButton.checked){
+        dropdown.style.maxHeight = "100px";
+        dropdown.style.opacity = "1";
+    }
+    else{
+        dropdown.style.maxHeight = "0";
+        dropdown.style.opacity = "0";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function toggleUserReturnTable() {
+        var userVisitNoButton = document.getElementById('userVisitNoButton');
+        var tableContainer = document.getElementById('tableContainer');
+
+        if (!tableContainer) {
+            console.error("Error: 'tableContainer' element not found.");
+            return;
+        }
+
+        if (userVisitNoButton.checked) {
+            tableContainer.style.display = "block"; // Ensure it's visible
+            setTimeout(() => {
+                tableContainer.classList.add("show"); // Apply animation
+            }, 10); // Short delay ensures smooth transition
+        } else {
+            tableContainer.classList.remove("show");
+            setTimeout(() => {
+                tableContainer.style.display = "none"; // Hide after animation
+            }, 500); // Delay matches CSS animation duration
+        }
+    }
+
+    // Attach event listener to radio button
+    var userVisitYesButton = document.getElementById("userVisitYesButton");
+    var userVisitNoButton = document.getElementById("userVisitNoButton");
+
+    if (userVisitYesButton && userVisitNoButton) {
+        userVisitYesButton.addEventListener("click", toggleUserReturnTable);
+        userVisitNoButton.addEventListener("click", toggleUserReturnTable);
+    }
+});
+
+function toggleOtherTextArea() {
+    var OtherCheckbox = document.getElementById('otherCheckBox');
+    var otherTextArea = document.getElementById('otherTextArea');
+    
+    // Display the dropdown if "Yes" is checked; hide otherwise.
+    if (OtherCheckbox.checked){
+        otherTextArea.style.maxHeight = "100px";
+        otherTextArea.style.opacity = "1";
+    }
+    else{
+        otherTextArea.style.maxHeight = "0";
+        otherTextArea.style.opacity = "0";
+    }
+  }
+    </script>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a></p>
+            </div>
+        </div>    
+    </footer>
+</body>

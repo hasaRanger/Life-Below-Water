@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W M T S Bandara, Student 2</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator_ST2.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="css/global.css"> <!-- External CSS link -->
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+    
+
+    <header id="top">
+        <h1>Life Below Water</h1>
+    </header>
+
+    <section class="stud">
+        <h2>W M T S Bandara, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2 id="globalcss">Global CSS</h2>
+                    <h3>HTML Structure with Key Tags</h3>
+                        <ol>
+                            <li>semantic HTML tags:
+                                <ul>
+                                    <li><code>&lt;p&gt;,&lt;nav&gt;, &lt;section&gt;, &lt;footer&gt;</code>: Used to define navigation, content sections, and footer, improving accessibility and SEO.</li>
+                                    <li><code>&lt;h2&gt; and &lt;h3&gt;</code>: Hierarchical headings structure content logically for screen readers.</li>
+                                </ul>
+                            </li>
+                            <li>Layout Components:
+                                <ul>
+                                    <li><code>&lt;div class="two-column-section"&gt;</code>nsive grid-like layout using flexbox for organizing cards.</li>
+                                    <li><code>&lt;div class="image-text-section"&gt;</code>: Combines an image and text side-by-side using flexbox for visual balance.</li>
+                                </ul>
+                            </li>
+                            <li>Navigation:
+                                <ul>
+                                    <li>Hamburger menu (☰) and .menu: Uses JavaScript to toggle visibility (hidden on mobile by default).</li>
+                                    <li><code>&lt;a href="#"&gt;Login&lt;/a&gt;</code>: Interactive button for user authentication.</li>
+                                </ul>
+                            </li>
+                            <li>Images:
+                                <ul>
+                                    <li><code>&lt;img&gt;</code> tags include descriptive alt attributes (e.g., "Ocean Image 1"), aiding screen readers.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    <h3>CSS Styling & Key Properties</h3>
+                    <ol>
+                        <li>Responsive Layouts:
+                            <ul>
+                                <li><b>Flexbox</b>
+                                    <ul>
+                                        <li>.photo-container, .two-column-section, .image-text-section: Use display: flex with gap and justify-content for spacing and alignment.</li>
+                                    </ul>
+                                </li>
+                                <li><b>Grid-like Columns:</b>
+                                    <ul>
+                                        <li>.two-column { width: 80% }: Ensures consistent column widths for card content.</li>
+                                    </ul>
+                                </li>                            
+                            </ul>
+                        </li>
+                        <li>Visual Design:
+                            <ul>
+                                <li>Gradients: background: linear-gradient(...) in .header and .image-text-section adds depth and modern aesthetics.</li>
+                                <li>Shadows & Borders: box-shadow and border-radius (e.g., 15px) soften edges and create depth in sections.</li>
+                            </ul>
+                        </li>
+                        <li>Typography:
+                            <ul>
+                                <li>Contrast: Dark text (#213555) on light backgrounds (#94D2BD) ensures readability.</li>
+                                <li>Font Sizing: Relative units (%) in .photo-section h2 and .awareness p maintain scalability across devices.</li>
+                            </ul>
+                        </li>
+                        <li>Responsive Images:
+                            <ul>
+                                <li>width: 30% in .photo-container img scales images proportionally within flex containers.</li>
+                            </ul>
+                        </li>
+                        <li>Custom Scrollbar Styling:
+                            <ul>
+                                <li><b>Scrollbar Width:</b><br>Sets the width of the scrollbar to 12px for a consistent look.</li>
+                                <li><b>Scrollbar Track:</b><br>Applies a gradient background to the scrollbar track and rounds its corners with border-radius: 10px.</li>
+                                <li><b>Scrollbar Thumb:</b><br>Styles the scrollbar thumb with a gradient, rounded corners, and a semi-transparent border for a polished look.</li>
+                                <li><b>Scrollbar Thumb Hover:</b><br>Changes the thumb's gradient on hover for interactive feedback.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <h3>Accessibility Considerations</h3>
+                    <ol>
+                        <li>semantic HTML:
+                            <ul>
+                                <li>Proper use of &lt;nav&gt;, &lt;section&gt;, and heading tags (&lt;h2&gt;, &lt;h3&gt;) ensures screen readers interpret content structure accurately.</li>
+                            </ul>
+                        </li>
+                        <li>Image Accessibility:
+                            <ul>
+                                <li>All &lt;img&gt; tags include descriptive alt attributes (e.g., "Plastic Pollution"), providing context for non-visual users.</li>
+                            </ul>
+                        </li>
+                        <li>Color Contrast:
+                            <ul>
+                                <li>High contrast between text and backgrounds (e.g., white text on #005F73 in .image-text-section) meets WCAG guidelines.</li>
+                            </ul>
+                        </li>
+                        <li>Keyboard Navigation:
+                            <ul>
+                                <li>Links and buttons (e.g., "Login", "Learn More") are focusable.</li>
+                            </ul>
+                        </li>
+                        <li>Responsive Design:
+                            <ul>
+                                <li>Flexbox and max-width: 90% ensure content adapts to screen sizes, aiding users on mobile devices.</li>
+                            </ul>
+                        </li>
+                        <li>Scrollbar Accessibility:
+                            <ul>
+                                <li>The custom scrollbar styling is purely visual and does not affect functionality. However, it is important to ensure that the scrollbar remains usable for all users, including those who rely on assistive technologies.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+            </section>
+
+            <section>
+                <h2 id="home">Home Page</h2>
+                <h3>Technical Description</h3>
+                <p>The webpage is structured using semantic HTML elements and styled with an external CSS file. The key HTML tags used include:</p>
+                <ul>
+                    <li><strong>&lt;nav&gt;</strong> - Defines the navigation bar, including a responsive menu with a hamburger icon for mobile views.</li>
+                    <li><strong>&lt;section&gt;</strong> - Organizes content into distinct sections for better readability and SEO.</li>
+                    <li><strong>&lt;div&gt;</strong> - Used for layout grouping, including the loader animation and structured content blocks.</li>
+                    <li><strong>&lt;img&gt;</strong> - Displays images with alt attributes for accessibility.</li>
+                    <li><strong>&lt;a&gt;</strong> - Hyperlinks for navigation, styled with hover effects.</li>
+                </ul>
+                
+                <p>Key CSS techniques used:</p>
+                <ul>
+                    <li><strong>Flexbox</strong> - Used for responsive layout control, ensuring elements are properly aligned.</li>
+                    <li><strong>CSS Animations</strong> - Implemented with the <code>@keyframes</code> rule to create fade-in effects.</li>
+                    <li><strong>Linear Gradient Background</strong> - Provides a visually appealing transition from light to dark blue.</li>
+                    <li><strong>Hover Effects</strong> - Used on images and buttons to enhance user interaction.</li>
+                    <li><strong>Media Queries</strong> - Enables responsiveness for different screen sizes.</li>
+                </ul>
+                <h2>Accessibility Considerations</h2>
+                <p>Accessibility is a key focus of this webpage to ensure usability for all users. The following measures were taken:</p>
+                <ul>
+                    <li><strong>Alt Text for Images</strong> - Every image has a descriptive <code>alt</code> attribute to aid screen readers.</li>
+                    <li><strong>Semantic HTML</strong> - Elements like <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> improve navigation for assistive technologies.</li>
+                    <li><strong>Color Contrast</strong> - Text and background colors are chosen for readability, ensuring sufficient contrast.</li>
+                    <li><strong>Keyboard Navigation</strong> - The menu and interactive elements are navigable using the keyboard.</li>
+                    <li><strong>Responsive Design</strong> - The layout adapts to different screen sizes, making it accessible on mobile devices.</li>
+                </ul>
+
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST2.html#homeval"><b>Include a link to the validation page</b></a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section>
+                <div class="section">
+                    <h2 id="table">Table Page</h2>
+                    <h3>HTML Structure</h3>
+                    <p>The HTML structure of the <strong>Conservation</strong> page is designed to be <strong>semantic</strong> and <strong>responsive</strong>. Key HTML tags and their purposes include:</p>
+                    <ul>
+                        <li><code>&lt;nav&gt;</code>: Defines the navigation bar, which includes a logo, a hamburger menu for mobile responsiveness, and links to other pages.</li>
+                        <li><code>&lt;section&gt;</code>: Organizes content into distinct sections (e.g., conservation methods, impact stats, success stories, and call to action).</li>
+                        <li><code>&lt;table&gt;</code>: Used to display a structured comparison of marine threats, conservation efforts, and their impacts.</li>
+                        <li><code>&lt;footer&gt;</code>: Contains footer content and links for additional navigation.</li>
+                    </ul>
+            
+                    <h3>CSS Techniques</h3>
+                    <p>The CSS file (<code>conservation.css</code>) uses modern styling techniques to create a <strong>visually appealing</strong> and <strong>responsive</strong> design. Key CSS properties and techniques include:</p>
+                    <ul>
+                        <li><strong>Flexbox</strong>: Used in <code>.stats-container</code> and <code>.conservation-methods ul</code> to create flexible, responsive layouts.</li>
+                        <li><strong>Gradients</strong>: The <code>background: linear-gradient</code> in the <code>body</code> creates a smooth transition from light to dark blue.</li>
+                        <li><strong>Animations</strong>: The <code>.fade-in</code> class uses <code>@keyframes fadeIn</code> to animate the page title, while <code>@keyframes floatBubbles</code> creates a floating bubble effect.</li>
+                        <li><strong>Hover Effects</strong>: Table rows (<code>tr:hover</code>) and list items (<code>.conservation-methods li:hover</code>) change color and scale slightly when hovered.</li>
+                    </ul>
+                </div>
+            
+                <!-- Accessibility Considerations -->
+                <div class="section">
+                    <h2>Accessibility Considerations</h2>
+                    <p>The <strong>Conservation</strong> page has been designed with accessibility in mind, ensuring it is usable by all visitors, including those with disabilities. Key accessibility features include:</p>
+                    <ul>
+                        <li><strong>Semantic HTML</strong>: Proper use of tags like <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> helps screen readers interpret the page structure.</li>
+                        <li><strong>Image Accessibility</strong>: All <code>&lt;img&gt;</code> tags include descriptive <code>alt</code> attributes (e.g., <code>alt="UN Logo"</code>).</li>
+                        <li><strong>Color Contrast</strong>: High contrast between text and backgrounds meets <strong>WCAG guidelines</strong>.</li>
+                        <li><strong>Keyboard Navigation</strong>: Interactive elements like the "Go to Top" button and donation link are focusable and usable with a keyboard.</li>
+                        <li><strong>Responsive Design</strong>: The page layout adapts to different screen sizes, making it accessible on mobile phones, tablets, and desktops.</li>
+                    </ul>
+                </div>
+            
+                <!-- Key HTML Tags and CSS Properties -->
+                <div class="section">
+                    <h2>Key HTML Tags and CSS Properties</h2>
+                    <h3>HTML Tags</h3>
+                    <ul>
+                        <li><code>&lt;nav&gt;</code>: Defines the navigation bar.</li>
+                        <li><code>&lt;section&gt;</code>: Organizes content into distinct sections.</li>
+                        <li><code>&lt;table&gt;</code>: Displays structured data (threats, conservation efforts, and impacts).</li>
+                        <li><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>: Lists key conservation methods.</li>
+                        <li><code>&lt;footer&gt;</code>: Contains footer content and links.</li>
+                    </ul>
+            
+                    <h3>CSS Properties</h3>
+                    <ul>
+                        <li><code>display: flex</code>: Used for flexible layout management.</li>
+                        <li><code>position: fixed</code>: Positions the "Go to Top" button and bubble container.</li>
+                        <li><code>animation</code> and <code>@keyframes</code>: Creates dynamic effects like floating bubbles and fade-in animations.</li>
+                        <li><code>box-shadow</code> and <code>border-radius</code>: Adds depth and softens edges for sections and buttons.</li>
+                        <li><code>hover</code> effects: Enhances interactivity for table rows and list items.</li>
+                    </ul>
+                </div>
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST2.html#tableval"><b>Include a link to the validation page</b></a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+            
+            <section>
+                <h2 id="content">Content Page</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    The HTML structure of this page is designed to be semantic and responsive, utilizing key tags such as <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;div&gt;</code>, and <code>&lt;footer&gt;</code> to organize content logically. The <code>&lt;nav&gt;</code> tag is used for the navigation bar, which includes a logo, a hamburger menu for mobile responsiveness, and links to other pages. The <code>&lt;header&gt;</code> tag contains the main heading and a brief description, while the <code>&lt;div&gt;</code> tags are used to structure the content sections.
+                </p>
+                <p>
+                    The CSS employs a combination of <code>flexbox</code> and <code>grid</code> for layout management. The <code>flexbox</code> is used in the <code>.content</code> class to align images and text side by side, ensuring a clean and responsive design. The <code>grid</code> layout is implicitly used for the bubble animation, where multiple <code>&lt;div&gt;</code> elements are positioned dynamically using CSS animations. Media queries are not explicitly shown in the provided CSS, but the design is responsive due to the use of relative units like percentages and the <code>max-width</code> property.
+                </p>
+                <p>
+                    Key CSS properties include:
+                    <ul>
+                        <li><code>display: flex</code> for aligning content within sections.</li>
+                        <li><code>position: fixed</code> for the bubble animation and the "Go to Top" button.</li>
+                        <li><code>animation</code> and <code>@keyframes</code> for creating the floating bubble effect.</li>
+                        <li><code>box-shadow</code> and <code>border-radius</code> for styling sections and buttons.</li>
+                        <li><code>hover</code> effects to enhance interactivity, such as scaling sections on hover.</li>
+                    </ul>
+                </p>
+            
+                <h2>Accessibility</h2>
+                <p>
+                    Accessibility has been addressed in several ways:
+                    <ul>
+                        <li><strong>Semantic HTML:</strong> The use of semantic tags like <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> helps screen readers understand the structure of the page.</li>
+                        <li><strong>Alt Text for Images:</strong> All images include <code>alt</code> attributes, providing descriptions for screen readers and improving accessibility for visually impaired users.</li>
+                        <li><strong>Keyboard Navigation:</strong> The "Go to Top" button is accessible via keyboard, and the hamburger menu can be toggled using JavaScript, ensuring that all interactive elements are usable without a mouse.</li>
+                        <li><strong>Color Contrast:</strong> The color scheme uses high-contrast colors (e.g., white text on a dark background in the footer) to ensure readability for users with visual impairments.</li>
+                        <li><strong>Responsive Design:</strong> The page is designed to be responsive, ensuring it is accessible on various devices, including mobile phones and tablets.</li>
+                    </ul>
+                </p>
+            
+                <h2>Key HTML Tags and CSS Properties</h2>
+                <p>
+                    <strong>HTML Tags:</strong>
+                    <ul>
+                        <li><code>&lt;nav&gt;</code>: Defines the navigation bar.</li>
+                        <li><code>&lt;header&gt;</code>: Contains the main heading and introductory text.</li>
+                        <li><code>&lt;div&gt;</code>: Used for structuring content sections and containers.</li>
+                        <li><code>&lt;img&gt;</code>: Displays images with descriptive <code>alt</code> attributes.</li>
+                        <li><code>&lt;footer&gt;</code>: Contains footer content and links.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>CSS Properties:</strong>
+                    <ul>
+                        <li><code>display: flex</code>: Used for flexible layout management.</li>
+                        <li><code>position: fixed</code>: Positions elements like the bubble container and "Go to Top" button.</li>
+                        <li><code>animation</code>: Creates dynamic effects like the floating bubbles.</li>
+                        <li><code>box-shadow</code>: Adds depth to sections and buttons.</li>
+                        <li><code>border-radius</code>: Rounds the corners of elements for a modern look.</li>
+                    </ul>
+                </p>  
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST2.html#contentval"><b>Include a link to the validation page</b></a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->          
+            </section>
+
+            <section id="challenges">
+                <h2>Challenges and Lessons Learned</h2>
+            
+                <h3>1. Ensuring Responsive Design</h3>
+                <p>Maintaining a consistent layout across different screen sizes was challenging. Using <strong>flexbox</strong> and <strong>media queries</strong> helped create a responsive design, but some sections required additional adjustments to prevent overlapping elements.</p>
+            
+                <h3>2. Navigation Menu Behavior</h3>
+                <p>The <strong>hamburger menu</strong> implementation required JavaScript to toggle visibility, and ensuring smooth transitions between mobile and desktop views was tricky. Debugging event listeners and styling hidden elements improved functionality.</p>
+            
+                <h3>3. Accessibility Considerations</h3>
+                <p>Ensuring compliance with <strong>WCAG 2.1</strong> guidelines required reviewing <code>alt</code> attributes, color contrast, and keyboard navigation. Some color choices had to be adjusted for better readability.</p>
+            
+                <h3>4. Page Load Optimization</h3>
+                <p>Using multiple high-quality images and animations affected page load speed. To improve performance, <strong>image compression</strong> and <strong>lazy loading techniques</strong> were considered.</p>
+            
+                <h3>5. Custom Animations and Interactivity</h3>
+                <p>The <strong>floating bubble animation</strong> added visual appeal, but required fine-tuning with CSS <code>@keyframes</code> and JavaScript for smooth rendering. Performance optimizations were needed to prevent lag on lower-end devices.</p>
+            
+                <h3>6. Internal Page Linking Issues</h3>
+                <p>Implementing <strong>anchor links</strong> for smooth scrolling had some challenges due to incorrect <code>id</code> references. Ensuring accurate linking and adding <code>scroll-behavior: smooth;</code> in CSS resolved the issue.</p>
+            </section>
+            
+
+            <section id="Compliance">
+                <h2>Compliance with Web Standards and Regulations</h2>
+            
+                <h3>W3C HTML & CSS Standards</h3>
+                <p>The page adheres to <strong>W3C (World Wide Web Consortium)</strong> HTML and CSS validation standards, ensuring proper semantic structure and responsive design.</p>
+                <ul>
+                    <li>Valid and well-structured HTML elements like <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> enhance search engine indexing and accessibility.</li>
+                </ul>
+            
+                <h3>Accessibility (WCAG 2.1)</h3>
+                <p>This website follows <strong>WCAG 2.1</strong> guidelines to ensure accessibility for all users.</p>
+                <ul>
+                    <li><strong>Alternative text (alt attributes):</strong> All images have alt text for screen readers.</li>
+                    <li><strong>Color contrast:</strong> Proper contrast between text and background improves readability.</li>
+                    <li><strong>Keyboard navigation:</strong> All interactive elements are accessible via keyboard.</li>
+                </ul>
+            
+                <h3>Responsiveness and Mobile Compatibility</h3>
+                <p>The page is designed to be fully responsive and adapts to different screen sizes.</p>
+                <ul>
+                    <li>Uses <strong>flexbox</strong> and <strong>media queries</strong> to ensure content scales on all devices.</li>
+                    <li>Includes a <strong>hamburger menu</strong> for better mobile navigation.</li>
+                </ul>
+            
+                <h3>Data Privacy and Security</h3>
+                <p>The website prioritizes security and compliance with privacy regulations.</p>
+                <ul>
+                    <li>No personal data is collected or stored directly, aligning with <strong>GDPR (General Data Protection Regulation)</strong> principles.</li>
+                    <li>Secure <strong>HTTPS protocols</strong> should be implemented to protect user data.</li>
+                </ul>
+            
+                <h3>User Experience and SEO Optimization</h3>
+                <p>Best practices have been applied to improve SEO and user experience.</p>
+                <ul>
+                    <li>Meta tags such as <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> enhance mobile usability.</li>
+                    <li>Descriptive headings and structured content improve readability and search engine rankings.</li>
+                    <li>The <strong>go-to-top button</strong> and smooth scrolling enhance navigation and user interaction.</li>
+                </ul>
+            </section>
+            
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>W3Schools.com. (n.d.). https://www.w3schools.com/css/css_navbar.asp</li>
+                        <li>W3Schools.com. (n.d.). https://www.w3schools.com/howto/howto_js_topnav_responsive.asp</i></li>
+                        <li>MDN Web Docs. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</li>
+                        <li>MDN Web Docs. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout</li>
+                        <li>Web Content Accessibility Guidelines (WCAG) 2.1. (2024, December 12). https://www.w3.org/TR/WCAG21/</li>
+                    </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="pageEditor_ST1.html#splash">Splash page</a></li>
+                        <li><a href="pageEditor_ST1.html#volunteer">Volunteer page</a></li>
+                        <li><a href="pageEditor_ST1.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#globalcss">Global CSS </a></li>
+                        <li><a href="#home">Home Page</a></li>
+                        <li><a href="#table">Table Page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="pageEditor_ST3.html#feedback">Feedback page</a> </li>
+                        <li><a href="pageEditor_ST3.html#team">Team page</a></li>
+                        <li><a href="pageEditor_ST3.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="pageEditor_ST4.html#profile">Profile page </a></li>
+                        <li><a href="pageEditor_ST4.html#sitemap">Sitemap page</a></li>
+                        <li><a href="pageEditor_ST4.html#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <p id="top" class="go-to-top"><a href="#top">▲</a></button>
+
+</body>
+</html>

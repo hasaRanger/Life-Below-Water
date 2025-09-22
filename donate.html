@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water | Donate</title>
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico"/>
+
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+    <div class="donate-container">
+        <div class="donate-header">Support Marine Conservation</div>
+        <p>Your donation helps protect and preserve marine ecosystems.</p>
+        <div class="donation-buttons">
+            <button>$10</button>
+            <button>$25</button>
+            <button>$50</button>
+            <button>$100</button>
+        </div>
+        <div class="custom-amount">
+            <label for="amount">Or enter a custom amount:</label>
+            <input type="number" id="amount" placeholder="$">
+        </div>
+        <button class="donate-btn">Donate Now</button>
+        <div class="donatefooter">Thank you for making a difference! 🌊💙</div>
+    </div>
+    <div style="height: 480px;"></div>
+    <footer class="footer" style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: 10px;">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="#">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+            const userButton = document.querySelector(".user-button");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                userButton.classList.toggle("active");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+
+        function showLoader() {
+            loader.style.display = "block";
+        }
+
+        function hideLoader() {
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 2000);
+        }
+
+        window.addEventListener("beforeunload", showLoader);
+        window.addEventListener("load", hideLoader);
+    });
+
+    </script>
+</body>
+</html>

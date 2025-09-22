@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 04 - Senith Vidanage</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator_ST4.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+
+    <section class="stud">
+        <h2>Senith Vidanage, Student 4</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="user_profile">User Profile Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The User Profile page was built using HTML and CSS grid/flexbox for layout structuring. The User profile contains sections like user details, description, skills, goals, frustrations, UN goals, experience, and contact.</p> 
+                    
+                    <h3>HTML</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>Buttons</h4>This is used to call JavaScript functions <span class="highlight">&lt;button class = "scroll_button" onclick="scrollUp()"&gt;↑&lt;/button&gt;</span>
+                            </li>
+                            <li><h4>iframes</h4>Google Calendar is embedded using an iframe <span class="highlight">&lt;iframe id = "calendar" src="...." 
+                                style="border:solid 1px #777" width="800" height="300" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;</span></li>
+                            
+                                
+                        </ul>
+
+                        <h3>CSS</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>CSS Grids and flexbox</h4>CSS grid/flexbox for layout structuring <span class="highlight">display : grid;</span> and <span class="highlight">display : flex;</span>
+                            </li>
+                            <li><h4>Hover</h4>Hover effects to improve user interactivity <span class="highlight">.goals:hover {
+                                declaration block
+                              }</span></li>
+                             
+                        </ul>
+
+                        <h3>JavaScript</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>Scroller</h4>To add scroller functionality <span class="highlight">function scrollUp() {
+                                    document.getElementById("scroller").scrollBy({top : -400,behaviour : "smooth"});
+                                }</span>
+                            </li>
+                            <li><h4>alert</h4>JavaScript to trigger alert box <span class="highlight">alert("Your inquiry has been submitted successfully!");</span></li>
+                             
+                        </ul>
+
+                        <h3>Accessibility</h3>
+                        <p>To improve accessibility on the User Profile page, the following measures were implemented:</p>
+                        <ul>
+                            <li>Semantic HTML elements (e.g., &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;) for screen reader compatibility.</li>
+                            <li>Alt text for all images, ensuring visually impaired users can understand the content.</li>
+                            <li>Keyboard navigability, allowing users to interact with all elements without a mouse.</li>
+                            <li>High-contrast color schemes for readability and better visual clarity.</li>
+                        </ul>
+
+                        <h3>Key Techniques Used</h3>
+                        <ul class = "list">
+
+                            <li>
+                                Grid layout for responsiveness
+                            </li>
+                            <li>
+                                Hover effects & transitions for better user interaction
+                            </li>
+                            <li>
+                                JavaScript functions for form handling and scrolling
+                            </li>
+                             
+                        </ul>
+                    
+                    <a href="validation_ST4.html"><h3>Link to the validation page</h3> </a><!--path to link the Page Editor with the splash page -->
+                    <a href="profile.html"><h3>Link to the page</h3></a>
+            </section>
+
+            <section>
+                <h2 id="site_map">Site Map Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Site Map page uses SVG graphics to visually represent the website structure. It employs CSS styling and transitions for a smoother user experience.</p> 
+
+                        <h3>HTML</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>SVG</h4> This element is used to create scalable vector graphics in HTML <span class="highlight">&lt;svg width="100" height="100"&gt; &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" /&gt; &lt;/svg&gt;</span>
+                            </li>
+                            <li><h4>hyperlinks</h4>To provide a link to another website <span class="highlight">&lt;a href = "https://www.google.com/"&gt;&lt;/a
+                                &gt;</span>
+                            </li>
+                            
+                                
+                        </ul>
+
+                        <h3>CSS</h3>
+                        <ul class = "list">
+
+                            <li><h4>Hover</h4>Colour change on hovering <span class="highlight">.circle:hover {
+                                fill: #94D2BD;
+                              }</span></li>
+                            
+                              <li>
+                                <h4>CSS Grids</h4>CSS Grid to create a container that seamlessly accommodates the SVG. <span class="highlight">display : grid;</span> 
+                            </li>
+                           
+                             
+                        </ul>
+
+                        
+                        <h3>Accessibility</h3>
+                        <p>To ensure accessibility on the Site Map page, the following enhancements were made:</p>
+                        <ul>
+                            
+                            <li>Keyboard accessibility ensures that users can navigate the site map using the Tab key.</li>
+                            
+                            <li>Hover effects are accompanied by focus states for better usability across different input methods.</li>
+                        </ul>
+                    
+
+
+                        <h3>Key Techniques Used</h3>
+                        <ul class = "list">
+
+                            <li>
+                                SVG elements for graphical representation
+                            </li>
+                            <li>
+                                Flexbox & Grid for layout alignment
+                            </li>
+                             
+                        </ul>
+
+                        <a href="validation_ST4.html"><h3>Link to the validation page</h3> </a><!--path to link the Page Editor with the splash page -->
+                        <a href="sitemap.html"><h3>Link to the page</h3></a>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Content Page features news updates presented using a grid-based layout. It includes dropdown navigation, images, and external news links.</p> 
+
+                        <h3>HTML</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>Internal Linking</h4> Implementing internal linking for seamless navigation within the same page. <span class="highlight">&lt;a href="#Ocean_conference"&gt;Mobilizing for the 2025 UN Ocean Conference&lt;/a&gt;</span> Destination location is marked with 
+                                <span class="highlight">id = "Ocean_conference"</span>
+                            </li>
+                            <li><h4>Dropdown Menu</h4>Enabling navigation to any location within the website. The menu can be displayed by hovering over the button for an interactive experience.<span class="highlight">&lt;button class="dropbtn"&gt☰&lt;/button&gt;
+                                &gt;</span>
+                            </li>
+                            
+                                
+                        </ul>
+                        
+
+                        <h3>CSS</h3>
+                        <ul class = "list">
+
+                            <li>
+                                <h4>Cards</h4> Seperate card for each news. individual cards ensure the easy updatability for future updates.
+                            </li>
+
+                            <li>
+                                <h4>CSS Grids and Flexbox</h4>CSS Grid and flex box used to structure news cards. <span class="highlight">display : grid;</span> and <span class="highlight">display : flex;</span>
+                            </li>
+                                
+                        </ul>
+                        <h3>Accessibility</h3>
+                        <p>The Content Page includes the following accessibility features:</p>
+                        <ul>
+                            <li>All images contain alt text.</li>
+                            <li>Dropdown menus are accessible using keyboard navigation.</li>
+                            <li>Font sizes and spacing ensure readability for all users.</li>
+                        </ul>
+                        <a href="validation_ST4.html"><h3>Link to the validation page</h3> </a><!--path to link the Page Editor with the splash page -->
+                        <a href="content_ST4.html"><h3>Link to the page</h3></a>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <h3>Challenges</h3>
+                <ul class = "list" style = "line-height: 1.6; ">
+
+                    <li>
+                        Aligning SVG elements in the Site Map page.
+                        <ul>
+                            <li>The alignment of SVG elements on the Site Map page was optimized by adjusting coordinates and the viewBox to ensure proper positioning and scalability.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        A smooth scroller integration into the Skill Card section of the User Profile page.
+                        <ul>
+                            <li>A smooth scrolling feature was integrated into the Skill Card section of the User Profile page using JavaScript, allowing seamless navigation through the listed skills.</li>
+                        </ul>
+                    </li>
+                        
+                    </ul>
+    
+
+                <h3>Lessons Learned</h3>
+                <ul class = "list">
+
+                <li>
+                    CSS positioning plays a crucial role in SVG usability.
+                </li>
+                <li>
+                    JavaScript event listeners enhance user interaction.
+                </li>
+                    
+                </ul>
+                
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>Ensuring compliance with web standards and accessibility guidelines is essential for a user-friendly and legally sound website. The following principles were adhered to:</p>
+                <ul>
+                    <li><strong>HTML & CSS Standards:</strong> All pages follow HTML5 and CSS3 best practices, ensuring proper structure and styling.</li>
+                    <li><strong>Accessibility Compliance:</strong> Implemented semantic HTML, ARIA attributes, and high contrast color schemes for better readability.</li>
+                    <li><strong>Responsive Design:</strong> Used flexible layouts and media queries to provide a seamless experience across different screen sizes.</li>
+                    <li><strong>Privacy & Security:</strong> Ensured form submissions do not store sensitive user data, complying with basic GDPR principles.</li>
+                    <li><strong>SEO Best Practices:</strong> Structured data, and descriptive alt text were used to improve search engine visibility.</li>
+                </ul>
+                <p>By following these principles, the website ensures compliance with modern web regulations and enhances user experience.</p>
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                
+                    <ul class="ref">
+                        <li>How To Add A Google Calendar to A Web Page Using HTML<a href="#">https://www.youtube.com/watch?v=MF3yXhiHN6k</a> (Last accessed: 22 Feb 2025).</li>
+                        <li>SVG Lecture note - <i><a href="#">https://intranet.ecs.westminster.ac.uk/modules/4COSC011W/svg.html</a></i> (Last accessed: 4 Mar 2025).</li>
+                        <li>Easy Typewriter Animation in Pure CSS - <i><a href="#">https://www.youtube.com/shorts/fTOcWMD_5pk</a></i> (Last accessed: 7 Mar 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#">Splash Page</a></li>
+                        <li><a href="#">Volunteer page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#">Home page </a></li>
+                        <li><a href="#">Table page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#user_profile">Profile page </a></li>
+                        <li><a href="#site_map">Sitemap page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu");
+    
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

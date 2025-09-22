@@ -1,0 +1,230 @@
+/* Body design */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to bottom, #E0E0E0, #005F73);
+    padding: 20px;
+}
+
+/*photo section*/
+.photo-section {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 90%;
+    background-color: #94D2BD;
+    border-radius: 15px;
+}
+.photo-section h2 {
+    font-size: 200%;
+    color: #213555;
+    margin-bottom: 20px;
+}
+.photo-section p {
+    font-size: 110%;
+    color: #213555;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 100%;
+}
+.photo-section a {
+    text-decoration: none;
+    color: #0011ff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.photo-section a:hover {
+    color:#005F73;
+}
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    align-items: center;
+}
+.photo-container img {
+    width: 30%;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+.photo-container img:hover {
+    transform: scale(1.1);
+}
+
+/*Why it matters section*/
+.why-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 15px;
+}
+.why-section h2 {
+    font-size: 200%;
+    color: #000000;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+.why-section p {
+    font-size: 110%;
+    color: #000000;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Cards section */
+.two-column-section {
+    background-color: #94D2BD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 40px auto;
+    gap: 20px;
+    border-radius: 15px
+}
+.two-column {
+    width: 80%;
+    text-align: center;
+}
+.two-column .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.two-column img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.two-column img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.two-column h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+.two-column p {
+    font-size: 16px;
+    color:#213555;
+    margin-top: 10px;
+}
+
+/* image-text section */
+.image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 40px auto;
+    background: linear-gradient(to right, #005F73, #0A9396);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.image-container img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.text-container {
+    width:60%;
+    color: white;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*Awareness section*/
+.awareness {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 15px;
+    background-color: #94D2BD;
+    padding:1%;
+    justify-content:space-between ;
+    align-items: center;
+}
+.awareness p {
+    font-size: 200%;
+    color: #000000;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-size: 150%;
+}
+.awareness a {
+    text-decoration: none;
+    color: #0011ff;
+    font-weight: bold;
+    font-size: 120%;
+    transition: color 0.3s;
+}
+
+/* Go to top button */
+
+.go-to-top {
+    display: flex; /* Ensure the button is always displayed */
+    position: fixed; /* Fix the button's position on the screen */
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 20px; /* Position it 20px from the right */
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.go-to-top a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.go-to-top:hover {
+    background-color: #94D2BD;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}

@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadeesha Hasaranga, Student 3</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Images/UN-Logo.png" alt="United Nations Logo">
+            <div class="logo"><a href="home.html"> Life Below Water</a></div>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="content_ST3.html">Threats</a>
+            <a href="table.html">Conservation</a>
+            <a href="content_ST4.html">Latest News</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+
+        </div>
+        <a href="profile.html" class="user-button">User Profile</a>
+    </nav>
+
+
+    <section class="stud">
+        <h2>Nadeesha Hasaranga, Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <section>
+                <h2 id="feeback">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <div class="introduction">
+                            <p>The Feedback Page is implemented using a combination of HTML, CSS and JavaScript to ensure a structured, user friendly and interactive interface. Below are the key techniques and choices used in its development.</p>
+                        </div>
+                        <div class="html-techniques">
+                            <h3>HTML Structure</h3>
+                            <ul>
+                                <li><b>Semantic Tags</b>: This page is structured with <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code> to enhance readability, SEO and accessibility.</li>
+                                <li>
+                                    <b>Forms and Inputs</b>: The feeddback form is created using <code>&lt;form&gt;</code> and various input elements such as:
+                                    <div class="sublist">
+                                        <ul class="discList">
+                                            <li><code>&lt;input type="text"&gt;</code>, <code>&lt;input type="email"&gt;</code> and <code>&lt;input type="tel"&gt;</code> for user details.</li>
+                                            <li><code>&lt;textarea&gt;</code> for additonal comments.</li>
+                                            <li><code>&lt;input type="radio"&gt;</code> and <code>&lt;input type="checkbox"&gt;</code> for surveying and multiple-choice feedback.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><b>Tables</b>: Tables &#40;<code>&lt;table&gt;</code>,  <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code>&#41; are used for structred data display and feedback collection.</li>
+                                <li><b>Navigation</b>: A collapsible menu is implemented using JavaScript for better mobile usability.</li>
+                                <li><b>Validation Attributes</b>: Attributes like <span class="important">required</span> and <span class="important">maxlength</span> are used to enforce user input constraints wihtout relying solely on JavaScript.</li>
+                            </ul>
+                        </div>
+                        <div class="css-techniques">
+                            <h3>CSS Styling</h3>
+                            <ul>
+                                <li><b>Background and Gradient Effects</b>: 
+                                    <ul class="discList">
+                                        <li>The page background uses <span class="important">background: linear-gradient&#40;to bottom, #E0E0E0, #005F73&#41;</span>; for a smooth color transition.</li>
+                                        <li>Input fields have a gradient effect with <span class="important">background: linear-gradient&#40;to right, white, #94D2B2&#41;</span>; .</li>
+                                    </ul>
+                                </li>
+                                <li><b>Typography and Spacing</b>:
+                                    <ul class="discList">
+                                        <li><span class="important">font-family: Arial, sans-serif;</span> for ensures readability.</li>
+                                        <li>Diffferent fonts like <span class="important">'Courier's New', 'Cambria'</span> and <span class="important">Georgia</span> are used for various sections.</li>
+                                    </ul>
+                                </li>
+                                <li><b>Responsiveness</b>;
+                                    <ul class="discList">
+                                        <li><span class="important">margin-left: auto; margin-right: auto;</span> centers elements dynamically.</li>
+                                    </ul>
+                                <li><b>Animations and Tranisitions</b>;
+                                    <ul class="discList">
+                                        <li><span class="important">table-container</span> and <span class="important">.otherTextArea</span> use <span class="important">transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;</span> for smooth content expansion.</li>
+                                        <li>Button hover effects are achieved using <span class="important">transition: 0.2s ease-in;</span> .</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Custom Radio and Checkbox Styling</b>:
+                                        <ul class="discList">
+                                            <li><span class="important">appeareance: none;</span> removes default styles , allowing for custom design.</li>
+                                            <li><span class="important">border: 1px solid black; border-radius: 50%;</span> provides a circular shape.</li>
+                                            <li><span class="important">input &#91;type="radio"&#93;:checked:before</span> sets a filled indicator for selected radio buttons.</li>
+                                        </ul>    
+                                </li>
+                            </ul>
+                        <div class="Js-techniques">
+                            <h3>JavaScript Functionalities</h3>
+                            <ul>
+                                <li><b>Dropdown Toggle for Subscription Preference</b>:
+                                    <ul class="discList">
+                                        <li><span class="important">toggleDropdown()</span> dynamically shows the subscription question dropdown when "Yes" is selected and hides when "No" is selected.</li>
+                                    </ul>
+                                </li>
+                                <li><b>Expanding Additional Questions</b>:
+                                    <ul class="discList">
+                                        <li><span class="important">toggleUserReturnTable()</span> displays a hidden feedback table when users indicate they have previously visited the website.</li>
+                                        <li><span class="important">toggleOtherTextArea()</span> reveals a text input field when the "Other" checkbox is selected.</li>
+                                    </ul>
+                                </li>
+                                <li><b>Event Listeners and Transitions</b>:
+                                    <ul class="discList">
+                                        <li>JavaScript smoothly animates visibility changes by modifying <span class="important">max-height</span> and <span class="important">opacity</span> properties is CSS.</li>
+                                    </ul>        
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accessibility">
+                        <h3>Accessibility</h3>
+                        <p>Ensuring accessibility is crucial for making the Feeback Page usable by people with disabilities and improving overall user experience. Below are the key accesssiblity considerations implemented.</p>
+                            <ul>
+                                <li><code>&lt;label&gt;</code> elements are explicitly linked to form controls via <span class="important">for</span> attribute to help user who rely on screen readers.</li>
+                                <li>The collapsible menu <span class="important">.dropdown</span> respond to keyboard navigation for improved usability.</li>
+                                <li>The background uses high-contrast color gradient(<span class="important">background: linear-gradient&#40;to bottom, #E0E0E0, #005F73&#41;</span>) to improve readibility.</li>
+                                <li>Sufficient contrast between text and background to meet <b>WCAG (Web Content Accessibility Guidelines) Standards</b>.</li>
+                                <li>Font choices (Arial, Cambria, Georgia) ensures legibilty over variety of devices.</li>
+                                <li>Form fields include clear labels and contextual hints for users with cognitive disablilites.</li>
+                                <li>Animations and transitions are kept subtle to avoid triggering motion sickness for sensitive users.</li>
+                            </ul>
+                    </div>
+                    
+                    <h3>Link to the validation page</h3> 
+                        <a href="validation_ST3.html#feedbackVal">Link to the Validation Page</a>
+                    <h3>Link to the page</h3>
+                        <a href="feedback.html">Link to the Feeback Page</a>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                    <div class="introduction">
+                        <p>Unique HTML and CSS features have been utilized here to implement the Team Page.</p> 
+                    </div>
+
+                    <div class="html-techniques">
+                        <h3>HTML Structure</h3>
+                        <ul>
+                            <li><b>Semantic Tags</b>: This page is structured with <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code>, enhancing readibility and accessibility.</li>
+                            <li><b>.image-container</b>: This division block serves as a <b>flexible container</b> that holds all the team member cards(image-box) and arranges them neatly.</li>
+                            <li><b>.image-box</b>: This block holds a portrait image for each team member and a description box with information of relevant member.</li>
+                            <li><b>.caption</b>: Description box for each team member is held by this block with information such as name, link to the Page Editor and social media handles.</li>
+                            <li><b>Navigation</b>: A collapsible menu is implemented using JavaScript for better mobile usability.</li>
+                        </ul>
+                    </div>
+                    <div class="css-techniques">
+                        <h3>CSS Styling</h3>
+                        <ul>
+                            <li>
+                                <b>Background and Gradient effects</b>:
+                                <ul class="discList">
+                                    <li>Background of the page has <span class="important">background: linear-gradient&#40;to bottom, #E0E0E0, #005F73&#41;</span>; for a smooth color transition.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Typography and Spacing</b>:
+                                <ul class="discList">
+                                    <li><span class="important">Arial, Helvetica, sans-serif;</span> and <span class="important">Verdana, Geneva, Tahoma, sans-serif;</span> are used as font styles to gain user traction.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Responsiveness</b>:
+                                <ul class="discList">
+                                    <li><span class="important">display: flex;</span> is used in <span class="important">.image-container</span> to arrange team memnbers dynamically.</li>
+                                    <li><span class="important">flex-wrap: wrap;</span> ensures that items move to the next row on smaller screen instead of unnecessary shrinking.</li>
+                                    <li><span class="important">justify-content:center;</span> ensures that <span class="important">.image-box</span> elements are evenly distributed across different screen sizes.</li>
+                                    <li><span class="important">overflow-x: hidden</span> is applied to the body which hides horizontal scrolling throughout the entire webpage, preventing altercations with felxboxes and other animations.</li>
+                                    <li><span class="important">gap: 20px;</span> provides consistent spacing between <span class="important">.image-box</span> elements without relying on fixed margins.</li>
+                                    <li><span class="important">margin: 0 10px</span> prevents elements from sticking to the edges of the screen.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Animations and Transitions</b>:
+                                <ul class="discList">
+                                    <li>Images inside <span class="important">.image-box</span> gets it's opacity increased when cursor is hovered over each team card with <span class="important">transform: scale(1.1);</span> smoothly.</li>
+                                    <li><span class="important">.caption</span> is hidden off-screen by default, on hover, it slides in from the left <span class="important">left: 0;</span> of the team card and slides back into the left of the team card as the cursor moved away.</li>
+                                    <li>Transition of <span class="important">.caption</span> starts 0.3s after the transtion of the image in <span class="important">.image-box</span> preventing overlaps between transitions.</li>
+                                    <li>Social media logos get smooth enlargement when they get hovered over with, and return to the original size as soon as the cursor moves away them.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                    <h3>Accessibility</h3>
+                        <p>To create an inclusive experience, accessibility plays a crucial role in making the Team Page usable for people with disabilities and improving usability for all. Below are the key accessibility enhancements implemented.</p>
+                        <ul class="discList">
+                            <li><code>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;</code> and <code>&lt;footer&gt;</code> improve document structure for screen readers.</li>
+                            <li>Proper use of <code>&lt;h1&gt;</code> tag for main topic.</li>
+                            <li><code>&lt;img&gt;</code> elements include <span class="important">alt</span> attributes, ensuring visually impaired users can understant image content.</li>
+                            <li><b>Flexbox-based layout</b> adjusts dynamically for different screen sizes.</li>
+                            <li>Background gradient and Fonts like <span class="important">Arial, Helvetica</span> meets <b>WCAG (Web Content Accessibility Guidelines)</b> Standards.</li>
+                            <li>Team member names and IDs are inside structured <code>&lt;div&gt;</code> containers.</li>
+                            <li>Smooth transitions (<span class="important">transition: ease-in-out;</span>) preventing overwhelming animations.</li>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> 
+                        <a href="validation_ST3.html#teamVal">Link to the Validation Page</a>
+
+                        
+                    <h3>Link to the page</h3>
+                        <a href="team.html">Link to the Team Page</a>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>This content page presents a detailed analysis about <b>Threats towards marine life</b> which is loaded with pictures and facts, facilitated with many HTML and CSS implementations.</p> 
+                        <h3>HTML Structure</h3>
+                        <ul>
+                            <li><b>Semantic tags</b>: This page is structured with <code>&lt;header&gt;, &lt;nav&gt;, &lt;div&gt;</code> and <code>&LT;footer&gt;</code>, enhancing usability and readibility.</li>
+                            <li><b>.threat-container</b>: This block serves as a flexible container that holds cards(<span class="important">.threat-left</span>, <span class="important">.threat-right</span>) that contains certain facts related to the topic.</li>
+                            <li><b>.threat-left & .threat.right</b>: Orders of how the subtopic, description and the image positioned inside the card is switching with the each card, improving positive user experience.</li>
+                        </ul>
+                        <h3>CSS Styling</h3>
+                        <ul>
+                            <li><b>Background and Gradient effects</b>:</li>
+                            <ul class="discList">
+                                <li>A gradient of <span class="important">background: linear-gradient&#40;to bottom, #E0E0E0, #005F73&#41;</span> is used in the background for a smooth color transition.</li>
+                                <li><span class="important">.introduction</span> contains <span class="important">background:rgba(148, 210, 178, 0.3);</span> which matches with the background colors.</li>
+                                <li>Each <span class="important">.threat-left</span> & <span class="important">.threat-right</span> got a gradient <span class="important">background: linear-gradient(to bottom, white, #94D2B2);</span> emphasizing them well, out of the background.</li>
+                            </ul>
+                            <li><b>Typography and Spacing</b>:</li>
+                            <ul class="discList">
+                                <li><span class="important">.introduction</span> uses <span class="important">'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;</span>, which is a <b>rounded and reader-friendly font</b>.</li>
+                                <li>Sub-headings such as <span class="important">.threat-left-topic</span> & <span class="important">.threat-right.topic</span> has <span class="important">'Bebas Neue', sans-serif;</span>, giving them a bold and modern look.</li>
+                                <li>Descriptive text (<span class="important">.threat-left & .threat-right</span>) got <span class="important">'Oswald', sans-serif;</span>, creating strong visual impact by empahsizing key informations.</li>
+                                <li><span class="important">padding-bottom:5px;</span> between list items improves readibility by preventing text from being too crammed.</li>
+                                <li><span class="important">.threat-left & .threat.right</span> have <span class="important">margin.bottom: 100px;</span> and <span class="important">.threat-caption-left, threat-caption-right</span> have <span class="important">margin-;eft: 40px; margin-right: 40px;</span> avoiding visual clutter, making it easy to differentiate between different threats.</li>
+                            </ul>
+                            <li><b>Responsiveness</b>:</li>
+                            <ul class="discList">
+                                <li><span class="important">.heading, .introduction, .threat-container</span> are positioned at the center of the page with <span class="important">align-items: center;</span>, for better readibility and usability.</li>
+                                <li>A <b>Go-to-top</b> button is added to the page for easy travellling back to the start of the page.</li>
+                                <li>Special terms inside the descriptive text (<span class="important">.benthic</span>, <span class="important">.PAC</span>) contains brief explainations included within a box, which would be appeared when the cursor is hovered over the relevant word.</li>
+                            </ul>
+                        </ul>
+
+                    <h3>Accessibility</h3>
+                        <p>A user-friendly Content Page should accomodate all individuals, regardless of ability. The adjustments listed below have been made to support a more seamless interactions for everyone.</p>
+                        <ul>
+                            <li>The page has properly used <b>semantic HTML elements</b> such as <code>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;</code> and <code>&lt;footer&gt;</code>, ensuring <b>better screen reader compatibilty</b>.</li>
+                            <li><code>&lt;img&gt;</code> elements include <code>&lt;alt&gt;</code> attribute assisting visually impaired users.</li>
+                            <li>body text has got <span class="important">color: #00364B</span> which suit with the color tone in the background.</li>
+                            <li>
+                                Inside descriptive text there are three types of highlighted data available, with a speciic color codings scheme.
+                                <ul class="discList">
+                                    <li><b>Quantitative Data </b>(<span class="important">.highlight1</span>) : <span class="important">color: #00364B</span> which represents legitimacy and accuracy, aligning with the <b>precision required for numerical data</b>.</li>
+                                    <li><b>Categorical Data </b>(<span class="important">.highlight2</span>) : <span class="important">color: #043E72</span> which <b>differentiates categories from numbers</b>, while still maintaining a professional and readable tone.</li>
+                                    <li><b>Temporal Data </b>(<span class="important">.highlight3</span>) : <span class="important">color: #050724</span> which is an appropriate color for <b>time-based trends.</b></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> 
+                        <a href="validation_ST3.html#contentVal">Link to the Validation Page</a>
+
+                        
+                    <h3>Link to the page</h3>
+                        <a href="content_ST3.html">Link to the Content Page</a>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <ul>
+                        <li>Formatting the user experience forum inside the feedback form, which seeks for user ratings on the overall experience of the webpage in a well-organized manner.</li>
+                        <ul class="squareList">
+                            <li>Used <code>&lt;table&gt;</code>, first row with <code>&lt;th&gt;</code> having value of rating options and first column having elements inside the webpage which need to be rated.</li>
+                            <li>Under each rating option, <code>&lt;input type="radio"&gt;</code> used for user to select each option.</li>
+                        </ul>
+                        <li>Asking the user for the reason to return to the website only if he visisted the website not for the first time.</li>
+                        <ul class="squareList">
+                            <li><span class="important">.userReturn</span> block appears only when the <b>No</b> radio button of <span class="important">.userVisit</span> is selected with JavaScript in a smooth transition.</li>
+                        </ul>
+                        <li>Making the webpages responsive to various device-viewports.
+                            <ul class="squareList">
+                                <li>Using Media Queries (<span class="important">@media screen</span>), elements inside each page are customized to adapt to different viewports.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <ul>
+                        <li><b>Accessibility Compliance</b>: The website uses proper HTML semantics (<span class="important"><code>&lt;header&gt;</code></span>, <span class="important"><code>&lt;nav&gt;</code></span>, <span class="important"><code>&lt;section&gt;</code></span>, <span class="important"><code>&lt;footer&gt;</code></span>) and <span class="important">alt</span> attributes for images, making it readable for screen readers.</li>
+                        <li><b>Data Pretection</b>: No personal data is stored or shared without consent.</li>
+                        <li><b>Security Measures</b>: The website does not include harmful scripts, SQL injection vulnerabilities, or unsafe user input handling.</li>
+                        <li><b>Content Compliance</b>: All media used (images, logos) are either original or sourced from royalty-free repositories, ensuring copyright laws are respected.</li>
+                    </ul>    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>Nakagawa, A., (2021) <i>The ultimate guide to ocean plastic.</i> [online] Ecowatch. Available at: <a href="https://www.ecowatch.com/ocean-plastic-guide-2653277768.html">https://www.ecowatch.com/ocean-plastic-guide-2653277768.html</a> (Last accessed: 02 Mar 2025).</li>
+                        <li>EarthDay.org, n.d. <i>Fact sheet: Plastic in the ocean.</i>[online] EarthDay.org. Available at: <a href="https://www.earthday.org/fact-sheet-plastics-in-the-ocean/">https://www.earthday.org/fact-sheet-plastics-in-the-ocean/</a> (Last accessed: 02 Mar 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="splash.html">Splash page</a></li>
+                        <li><a href="volunteer.html">Volunteer page</a></li>
+                        <li><a href="content_ST1.html">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="home.html">Home page </a></li>
+                        <li><a href="table.html">Table page</a></li>
+                        <li><a href="content_ST2.html">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="feedback.html">Feedback page</a> </li>
+                        <li><a href="team.page">Team page</a></li>
+                        <li><a href="content_ST3.html">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="profile.html">Profile page </a></li>
+                        <li><a href="sitemap.html">Sitemap page</a></li>
+                        <li><a href="content_ST4.html">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><a href="quicklinks.html">Quick Links</a> | <a href="#">Social Media</a> | <a href="#">Newsletter Signup</a> | <a href="#">Copyright Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
