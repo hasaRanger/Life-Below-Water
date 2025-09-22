@@ -63,7 +63,6 @@ While this was a group project, my main contributions were:
 
 ---
 
-## 🗒️ My Work
 
 
 ---
